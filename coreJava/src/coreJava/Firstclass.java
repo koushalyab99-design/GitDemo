@@ -25,6 +25,8 @@ public class Firstclass {
 		
 		System.out.println("Hi koushalya ");
 		System.out.print(" learning to code");
+		System.out.println("learning git");
+		System.out.println("learning branch");
 		
 		
 		
