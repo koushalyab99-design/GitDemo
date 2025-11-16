@@ -1,0 +1,57 @@
+Collections:
+
+1.List :
+---------
+Array list
+-----------
+       1. create object
+       2. without giving the allocation we can add the values 
+       3. dynamic size array - no fixed size
+       4.can accept duplicate elements 
+
+Linked list
+-----------
+vector
+--------------------------------------------------------------------------
+
+2.Set:
+-------
+Hash set:
+---------
+      1.does not accept duplicate values
+      2.no guarantee if the set stores elements in sequential order - random order
+
+
+
+Tree Set:
+---------
+Linked Hash Set:
+---------------------------------------------------------------------------
+
+
+3.Map:
+
+HashMap:
+--------
+1. Key value pair
+2.put method
+
+HashMap and HashTable:
+1. HashMap - not thread safe (more threads can access at a same time)and not synchronized
+           - allows null values 
+           -uses itertor to iterate the values in map
+2.HashTable - thread safe (one thread at a time)and synchronized
+            - does not allow null values 
+            - uses enumerator to iterate the values
+
+
+
+
+
+
+
+
+
+
+
+

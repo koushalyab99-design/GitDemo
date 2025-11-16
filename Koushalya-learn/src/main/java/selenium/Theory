@@ -1,0 +1,174 @@
+//Webdriver is an interface - created object for chromedriver -that uses method from webdriver
+
+//System.setProperty("webdriver.chrome.driver", "D://chromedrivers/chromedriver.exe");
+		//if the above path is not given -> selenium manager will take care
+		//WebDriverManager.chromedriver().setup();
+		//difference btw diver.close and driver.quit 
+		//driver.close -> only closes the current window
+		//driver.quit -> closes all associated windows
+
+*****************************************************************************************
+Locators:
+
+ID
+Xpath
+Css Selector
+name
+Class name
+Tag name
+Link text - for any link, we can use this tag (mention the text of that link)
+partial Link text 
+
+********************************************************************************************
+
+<input type = "text">
+input - tagname
+type - attribute
+text - value
+
+********************************************************************************************
+
+CSS Selector
+class name-> tagname.classname
+id -> tagname#id 
+
+if there is no tag name 
+Tagname[attribute='value']
+
+*********************************************************************************************
+implicit time out: will wait for objects to be shown
+Thread.sleep - waits till the page is stable
+
+- if driver is given 5 seconds implicit timeout - if the locator is found in 2 seconds ->
+it will go to next line -> it will not wait for 5 seconds
+- it is globally applicable to each and every step
+
+*********************************************************************************************
+X path:
+
+//Tagname[@attribute='value']
+//Tagname[@attribute='value'][index value]
+
+for CSS selector - by using index value: Tagname[attribute='value']:nth-child[index value]
+
+Xpath: For traversing from parent to child
+//parent - tagname/child-tagname[index value]
+//tagname[contains(@attribute,'*value')] - this star checks for the starting letters of the value
+
+
+
+ css selector : For traversing from parent to child
+ parent space child
+tagname[attribute*='value'] - this star checks for the starting letters of the value
+
+if we want to identify based on the text :
+//tagname[text()='value']
+//*[text()='value']
+
+
+Traversing:
+Sibilings- child:
+//tagname/tagname/tagname../following-sibiling::tagname[index value]
+
+child - parent:
+//tagname/tagname/tagname../parent::tagname
+
+Parent - child relationship:
+//xpath //xpath
+
+Absolute Xpath: starts from the root (from the starting of the tag) 
+                starts from /
+                starts from /html
+
+Relative Xpath: starts from middle
+                starts from // 
+
+*************************************************************************************
+windows activities:
+driver.manage().window().maximize(); - maximize window
+driver.navigate().to(URL) - navigate to next url - but driver will not wait 
+                          - driver.get will wait for the page to load 
+
+
+**************************************************************************************
+
+Dropdown:
+Static dropdown:
+
+Select tag -> create object for select class 
+- dropdown cannot be directly selected and it is not visible to selenium
+- object for select class is created
+- webelement for the dropdown is used in select class
+- dropdown can be selected by object.
+
+
+
+****************************************************************************************
+
+Synchronization in selenium:
+
+1. Implicit wait:
+   -define wait time globally (wait seconds before throwing exception)
+   -waits for the element to load
+   -one the element is loaded , it will not wait for remaining seconds - it will move to next step
+   - Disadvantages: for example if a implicit wait is defined for 15 seconds - and if it fail- it will take 15 seconds
+   for us to know that the step is failed
+
+2.Explicit wait:
+   - target a specific element
+   - it is helpful for performance testing - for duration of seconds
+   - 2 different waits Fluentwait and Webdriverwait
+   - Webdriverwait -- continuosly monitor
+   - Fluentwait -- monitor at regular intervals of time with polling s
+   
+   
+   
+3. Thread.sleep
+   - it is part of java
+   - pause the entire script
+   -one the element is loaded , it will wait for remaining seconds - it will not move to next step  
+   
+ 
+**************************************************************************************************
+Actions: (Handling mouse and ajax iteractions)
+1.Mouseover and keyboard interactions
+2.Context click (right click)
+3.Double click 
+4.Drag and Drop
+5.Capital letters  
+
+
+***************************************************************************************************
+Scrolling in selenium:
+1. use javascript executor
+
+
+***************************************************************************************************
+Certification problem/ privacy error
+
+1. use chrome options , create object for chromeoptions and use setacceptinsecurecerts method
+
+***************************************************************************************************
+Get status code of the URL 
+1. by passing url to URL connection class
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

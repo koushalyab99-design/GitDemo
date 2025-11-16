@@ -1,0 +1,21 @@
+Packages -> list of class , interfaces ..
+
+default packages -> java.lang-> comes within compiler
+java.util -> collections, interfaces -> import to use them
+
+user defined packages -> import.packagename;
+
+
+* class A can use Class b directly by creating object if they both of them belongs to same packages
+
+
+*Default :  access method anywhere in package
+           - but cannot be used in other package even if it is imported
+           
+*Public:  can be used across all packages 
+
+*Private: can be used only inside the class  - even inside same package 
+
+*Protected: -access method anywhere in package
+           - but can be used in other package only if it is inherited
+             can be accessed only in subclass - only classes that inherits can use variables and methods         
