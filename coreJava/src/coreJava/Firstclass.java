@@ -19,6 +19,7 @@ public class Firstclass {
 		System.out.println(ob.a);
 		System.out.println(a);
 		System.out.println("hello");
+		System.out.println("bbye vye");
 		sn.setData();
 		
 		
