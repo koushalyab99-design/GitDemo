@@ -18,6 +18,7 @@ public class Firstclass {
 		System.out.println(ob.getData());
 		System.out.println(ob.a);
 		System.out.println(a);
+		System.out.println("hello");
 		sn.setData();
 		
 		
