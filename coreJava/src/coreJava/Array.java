@@ -17,7 +17,7 @@ public class Array {
 		
 		for(int i=0;i<b.length;i++)
 		{
-			System.out.print(b[i]);
+			//System.out.print(b[i]);
 		}
 		System.out.println(a[(a.length)-1]);
 		
