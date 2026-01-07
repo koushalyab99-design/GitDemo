@@ -19,10 +19,10 @@ public class InterviewQuestionCollection {
 		
 		
 		ArrayList<Integer> arr = new ArrayList<Integer>();
-		int k=1;
+		//int k=1;
 		for(int i=0;i<a.length;i++)
 		{
-			//int k=1;
+			int k=1;
 			if (!arr.contains(a[i]))
 			{
 				arr.add(a[i]);

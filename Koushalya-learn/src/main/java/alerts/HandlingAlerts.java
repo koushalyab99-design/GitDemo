@@ -17,7 +17,7 @@ public class HandlingAlerts {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); // global
 		driver.get("https://www.rahulshettyacademy.com/AutomationPractice/");
 
-		driver.manage().window().maximize();
+	 	driver.manage().window().maximize();
 
 		driver.findElement(By.xpath("//div/fieldset/input[@id='name']")).sendKeys(name);
 		driver.findElement(By.xpath("//div/fieldset/input[@id='alertbtn']")).click();
